@@ -1,6 +1,7 @@
 import { SectionWrapper, SectionHeading } from "@/components/section-wrapper";
 import { publications, type PublicationStatus } from "@/data";
 import { ExternalLink } from "lucide-react";
+import { VolcanoDivider } from "@/components/visual/volcano-divider";
 
 const statusConfig: Record<
   PublicationStatus,
@@ -49,6 +50,7 @@ function highlightAuthor(text: string) {
 export function Research() {
   return (
     <SectionWrapper id="research" className="bg-muted/30">
+      <VolcanoDivider />
       <SectionHeading>Research & Publications</SectionHeading>
 
       {/* Stat strip */}

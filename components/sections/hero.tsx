@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Mail, Download, BookOpen } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { siteConfig } from "@/data";
+import GeneNetwork from "@/components/visual/gene-network";
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
@@ -21,8 +22,20 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center pt-20 pb-16"
+      className="relative isolate overflow-hidden min-h-screen flex flex-col justify-center pt-20 pb-16"
     >
+      {/* PPI gene-interaction network — decorative background */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 opacity-60"
+        style={{
+          maskImage: "radial-gradient(ellipse at center, black, transparent 82%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, black, transparent 82%)",
+        }}
+      >
+        <GeneNetwork />
+      </div>
+
       {/* Subtle background gradient */}
       <div
         aria-hidden
