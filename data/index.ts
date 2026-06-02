@@ -9,7 +9,7 @@ export const siteConfig = {
   github: "https://github.com/faysalfahim",
   linkedin: "https://www.linkedin.com/in/fahim-faysal-a9750019b/",
   researchGate: "https://www.researchgate.net/profile/Md-Fahim-Faysal-2",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Md_Fahim_Faysal_Resume.pdf",
 };
 
 export type PublicationStatus =
