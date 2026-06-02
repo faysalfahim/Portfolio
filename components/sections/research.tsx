@@ -2,6 +2,7 @@ import { SectionWrapper, SectionHeading } from "@/components/section-wrapper";
 import { publications, type PublicationStatus } from "@/data";
 import { ExternalLink } from "lucide-react";
 import { VolcanoDivider } from "@/components/visual/volcano-divider";
+import { ResearchPipeline } from "@/components/visual/research-pipeline";
 
 const statusConfig: Record<
   PublicationStatus,
@@ -52,6 +53,8 @@ export function Research() {
     <SectionWrapper id="research" className="bg-muted/30">
       <VolcanoDivider />
       <SectionHeading>Research & Publications</SectionHeading>
+
+      <ResearchPipeline />
 
       {/* Stat strip */}
       <div className="mb-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground border border-border rounded-xl px-5 py-4 bg-card">
