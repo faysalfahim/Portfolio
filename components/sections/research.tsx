@@ -26,6 +26,10 @@ const statusConfig: Record<
     className:
       "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400",
   },
+  preprint: {
+  label: "Preprint",
+  className: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300",
+},
 };
 
 const groups: { status: PublicationStatus; heading: string }[] = [
