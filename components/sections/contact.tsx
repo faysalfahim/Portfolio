@@ -72,8 +72,7 @@ export function Contact() {
 
       <footer className="mt-20 pt-8 border-t border-border text-center text-xs text-muted-foreground">
         <p>
-          © {new Date().getFullYear()} Md Fahim Faysal. Built with Next.js, Tailwind CSS &
-          Framer Motion.
+          © {new Date().getFullYear()} Md Fahim Faysal. 
         </p>
       </footer>
     </SectionWrapper>
