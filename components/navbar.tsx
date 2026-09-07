@@ -54,7 +54,7 @@ export function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "light");
 
   return (
     <header

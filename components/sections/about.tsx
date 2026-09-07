@@ -21,12 +21,11 @@ export function About() {
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
             My research focuses on designing algorithms, R packages, and web platforms for{" "}
             <span className="text-primary font-medium">drug and vaccine discovery</span> through
-            integrative analysis of molecular OMICS data — genomics, transcriptomics, proteomics,
-            and metagenomics. I have published and co-authored 15+ papers in journals including
+            integrative analysis of molecular OMICS data. I have published and co-authored 15+ papers in journals including
             PLOS ONE, Scientific Reports, and Briefings in Bioinformatics.
           </p>
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-            Beyond research, I ship production software — most recently a CRM and course-management
+            Beyond research, I ship production software, most recently a CRM and course-management
             platform serving 1000+ daily users. I&apos;m also an active competitive programmer
             with an Expert rating on Codeforces (max 1686).
           </p>

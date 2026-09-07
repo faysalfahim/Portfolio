@@ -34,6 +34,16 @@ export const publications: Publication[] = [
   // ───────── Published (journal) ─────────
   {
     title:
+      "In-silico identification of SNPs associated with breast cancer for disclosing pathogenetic processes and therapeutic candidates",
+    authors: "Ali, M., ..., Faysal, M. F. F., et al.",
+    venue: "Discover Oncology",
+    year: 2026,
+    status: "published",
+    doi: "10.1007/s12672-026-05809-0",
+    link: "https://doi.org/10.1007/s12672-026-05809-0",
+  },
+  {
+    title:
       "In-Silico discovery of Pediatric Acute-Myeloid-Leukemia (pAML) causing druggable molecular signatures through single-cell RNA-Seq profile analysis",
     authors: "Ahmed, M. F., ..., Faysal, M. F. F., et al.",
     venue: "PLOS ONE, 20(10), e0335410",
@@ -106,10 +116,10 @@ export const publications: Publication[] = [
   // ───────── Under review ─────────
   {
     title:
-      "Identification of Druggable Shared Host Key-Genes (shKGs) Linking Idiopathic Pulmonary Fibrosis (IPF) to Tuberculosis (TB) through RNA-Seq Analysis for Dual-Targeted Drug Repurposing",
+      "Identification of Shared Host Key-Genes (shKGs) Linking idiopathic pulmonary fibrosis (IPF) to Tuberculosis (TB) through RNA-Seq Profile Analysis for Dual-Targeted Diagnostic and Therapeutic Applications",
     authors: "Faysal, M. F. et al.",
-    venue: "Briefings in Bioinformatics",
-    year: 2025,
+    venue: "BioMedinformatics",
+    year: 2026,
     status: "under-review",
   },
   {
@@ -117,32 +127,34 @@ export const publications: Publication[] = [
       "Computational identification of shared host key-genes and their mechanisms linking type-2 diabetes to tuberculosis, followed by dual-targeted drug repurposing",
     authors: "Faysal, M. F. et al.",
     venue: "Infection, Genetics and Evolution",
-    year: 2025,
+    year: 2026,
     status: "under-review",
   },
   {
     title:
-      "Computational discovery of common host key-genes (chKGs) and their mechanisms associated with Dengue–SARS-CoV-2 co-infection for exploring common therapies through integrated RNA-seq profile analysis",
+      "Identification of shared host key-genes and molecular mechanisms associated with Dengue-SARS-CoV-2 coinfection through integrated RNA-seq profile analysis for prioritizing therapeutic candidates",
     authors: "Tasfia Noor, Faysal, M. F. et al.",
-    venue: "PLOS ONE",
-    year: 2025,
+    venue: "Viruses",
+    year: 2026,
     status: "under-review",
   },
 
   // ───────── Submitted ─────────
-  {
-    title: "Type-2 diabetes & dengue virus, common drug repurposing",
-    authors: "Faysal, M. F. et al.",
-    venue: "Scientific Reports",
-    year: 2025,
-    status: "submitted",
-  },
 
   // ───────── Preprints (verify status — these DOIs look like self-archived/preprint records) ─────────
   {
-    title: "n silico transcriptomic analysis reveals shared molecular signatures and immune-associated pathways between Hashimoto’s thyroiditis and type 2 diabetes with exploratory drug repurposing", // could not be resolved via search
-    authors: "Sharma, Ovi et al.", // TODO: confirm
-    venue: "Preprint",
+    title: "FlexAutoDock: A Flexible Platform for Automated Molecular Docking and Virtual Screening of Natural and Synthetic Compounds", // could not be resolved via search
+    authors: "Ahmed, M.F, Faysal, M.F, et al.", // TODO: confirm
+    venue: "bioRxiv",
+    year: 2026,
+    status: "preprint",
+    doi: "10.64898/2026.08.11.744098",
+    link: "https://doi.org/10.64898/2026.08.11.744098",
+  },
+  {
+    title: "In silico transcriptomic analysis reveals shared molecular signatures and immune-associated pathways between Hashimoto’s thyroiditis and type 2 diabetes with exploratory drug repurposing", // could not be resolved via search
+    authors: "Sharma, Ovi,.., Faysal, M.F, et al.", // TODO: confirm
+    venue: "bioRxiv",
     year: 2026,
     status: "preprint",
     doi: "10.64898/2026.02.16.706089",
@@ -198,44 +210,20 @@ export const projects: Project[] = [
     tags: ["TypeScript", "Scheduling", "Algorithms"],
   },
   {
-    name: "Car-parking",
-    description:
-      "A car-parking management system for tracking slot availability and vehicle entry/exit records.",
-    language: "JavaScript",
-    repoUrl: "https://github.com/faysalfahim/Car-parking",
-    tags: ["JavaScript", "Management System"],
+    name: "FlexAutoDock",
+    description:"FlexAutoDock eases the hassle of non-tech researchers to explore the molecular docking analysis with just a few clicks.",
+    language: "Python",
+    repoUrl: "https://github.com/faysalfahim/FlexAutodock",
+    tags: ["Python","TypeScript", "Docking Platform"],
   },
   {
-    name: "Movie-List",
-    description:
-      "A movie browsing web app that lets users search, list, and manage their favourite films.",
-    language: "JavaScript",
-    repoUrl: "https://github.com/faysalfahim/Movie-List",
-    tags: ["JavaScript", "Web App", "API"],
+    name: "FootyLive",
+    description:"Trying to accumulate the whole football world in a place to easily track down all the info.",
+    language: "TypeScript",
+    repoUrl: "https://github.com/faysalfahim/FootyLive",
+    tags: ["TypeScript", "Live Scores", "Transfer Updates"],
   },
-  {
-    name: "URL-shortener",
-    description: "A lightweight URL-shortening service that generates and resolves short links.",
-    language: "JavaScript",
-    repoUrl: "https://github.com/faysalfahim/URL-shortener",
-    tags: ["JavaScript", "Backend", "REST API"],
-  },
-  {
-    name: "Social-Media-Analytics",
-    description:
-      "A dashboard for aggregating and visualising social-media engagement metrics across platforms.",
-    language: "JavaScript",
-    repoUrl: "https://github.com/faysalfahim/Social-Media-Analytics",
-    tags: ["JavaScript", "Analytics", "Dashboard"],
-  },
-  {
-    name: "Codeforces",
-    description:
-      "Archive of competitive-programming solutions across hundreds of Codeforces problems in C++.",
-    language: "C++",
-    repoUrl: "https://github.com/faysalfahim/Codeforces",
-    tags: ["C++", "Competitive Programming"],
-  },
+  
 ];
 
 export interface CPStat {
@@ -314,9 +302,8 @@ export const skillGroups: SkillGroup[] = [
       "ComplexHeatmap",
       "Plotly",
       "Biomarker Discovery",
-      "Molecular Docking (AutoDock Vina)",
-      "ADMET (SwissADME, pkCSM, ADMETlab)",
-      "Drug Repurposing Pipelines",
+      "Molecular Docking",
+      "ADMET Analysis",
     ],
   },
   {
@@ -339,7 +326,7 @@ export const education: EducationEntry[] = [
     institution: "Rajshahi University of Engineering & Technology (RUET)",
     location: "Rajshahi, Bangladesh",
     period: "2019 – 2024",
-    result: "CGPA 3.31 / 4.00",
+    result: "CGPA 3.31 / 4.00 (Last 4 semesters AVG 3.50/4.00 )",
   },
   {
     degree: "Higher Secondary Certificate (HSC)",

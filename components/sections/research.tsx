@@ -39,6 +39,7 @@ const groups: { status: PublicationStatus; heading: string }[] = [
   { status: "conference", heading: "Conference Papers" },
   { status: "under-review", heading: "Under Review" },
   { status: "submitted", heading: "Submitted" },
+  { status: "preprint", heading: "Preprint" },
 ];
 
 function highlightAuthor(text: string) {
